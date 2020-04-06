@@ -1,0 +1,235 @@
+.stages
+	padding: 120px 0
+	background-color: #F5F5F5
+	&__title
+		display: inline-block
+		margin-top: 0
+		margin-bottom: 30px
+	&__subtitle
+		font-family: $mont-regular
+		font-size: 24px
+		line-height: 140%
+		letter-spacing: 1.25px
+		color: $text-color
+		display: block
+		margin-bottom: 50px
+	&-numbers
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		-webkit-align-items: center
+		align-items: center
+		margin-bottom: 50px
+	&-number
+		display: flex
+		-webkit-flex-direction: column
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-justify-content: center
+		justify-content: center
+		-webkit-align-items: center
+		align-items: center
+		max-width: 100px
+		padding: 50px 60px
+		-webkit-transition: all .1s 
+		-moz-transition: all .1s 
+		-ms-transition: all .1s 
+		-o-transition: all .1s 
+		transition: all .1s 
+		position: relative
+		&-block
+			padding: 20px 24px
+			background-color: #EA8917
+			box-shadow: 0px 4px 30px #ECEFF1
+			border-radius: 10px
+			position: absolute
+			left: -45px
+			top: -30px
+			span
+				font-family: $mont-semibold
+				font-size: 14px
+				line-height: 130%
+				letter-spacing: 0.5px
+				color: #FFFFFF
+				display: block
+			&-image
+				position: absolute
+				bottom: -80px
+				left: 10px
+				&-media
+					display: none
+		&-5
+			position: relative
+		/*&-5>&__text
+			border: 4px solid white
+			box-shadow: 2px 2px 0 1px #779, 0 0 0 6px white, -5px -5px 0 3px #779
+			animation: 2s anim infinite
+			animation-timing-function: ease*/
+		&:hover
+			background-color: #6378D6
+			-webkit-border-radius: 30px 
+			border-radius: 30px
+			cursor: pointer 
+		&_active
+			background-color: #6378D6
+			border-radius: 30px
+			-webkit-transition: all .3s 
+			-moz-transition: all .3s 
+			-ms-transition: all .3s 
+			-o-transition: all .3s 
+			transition: all .3s 
+		&-1>&__text
+			padding: 14px 20px
+		&__text
+			font-family: $mont-regular
+			font-size: 40px
+			line-height: 130%
+			text-align: center
+			letter-spacing: 0.5px
+			color: #FFFFFF
+			background-color: #94A2E0
+			box-shadow: 0px 4px 10px rgba(102, 102, 102, 0.4)
+			-webkit-border-radius: 50% 
+			border-radius: 50% 
+			padding: 14px 15px
+			display: block
+			margin-bottom: 30px
+			&_active
+				font-family: $mont-medium
+				color: #0225C1
+				background-color: #FFFFFF
+				-webkit-transition: all .3s 
+				-moz-transition: all .3s 
+				-ms-transition: all .3s 
+				-o-transition: all .3s 
+				transition: all .3s 
+		&__sub
+			display: block
+			font-family: $mont-medium
+			font-size: 18px
+			line-height: 130%
+			text-align: center
+			letter-spacing: 0.5px
+			color: #94A2E0
+			&_active
+				color: #FFFFFF 
+				-webkit-transition: all .3s 
+				-moz-transition: all .3s 
+				-ms-transition: all .3s 
+				-o-transition: all .3s 
+				transition: all .3s 
+	&-item
+		display: flex
+		position: relative
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		-webkit-align-items: center
+		align-items: center
+
+		&__text
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+		&__title
+			font-family: $mont-medium
+			font-size: 24px
+			line-height: 130%
+			letter-spacing: 1.25px
+			color: #0225C1
+			margin-top: 0
+			margin-bottom: 20px
+			width: 370px
+		&__subtitle
+			display: block
+			margin-bottom: 30px
+			font-family: $mont-regular
+			font-size: 18px
+			line-height: 130%
+			letter-spacing: 0.5px
+			color: $text-color
+			width: 370px
+		&__list
+			display: flex
+			-webkit-flex-direction: column
+			-ms-flex-direction: column
+			flex-direction: column
+			&-title
+				display: block
+				font-family: $mont-medium
+				font-size: 18px
+				line-height: 130%
+				letter-spacing: 0.5px
+				color: #000000
+				margin-bottom: 20px 
+			&-item
+				display: block
+				margin-bottom: 10px
+				font-family: $mont-regular
+				font-size: 16px
+				line-height: 20px
+				letter-spacing: 0.5px
+				color: $text-color
+				padding-left: 40px
+				position: relative
+				&::before
+					content: '' 
+					position: absolute
+					width: 20px
+					height: 20px
+					left: 0
+					top: 45%
+					-webkit-transform: translateY(-50%)
+					-moz-transform: translateY(-50%)
+					-ms-transform: translateY(-50%)
+					-o-transform: translateY(-50%)
+					transform: translateY(-50%)
+					background: url('../img/main/main-list-check.svg') center / cover no-repeat
+					
+.stages-anim-rotate
+	position: absolute
+	width: 115px
+	height: 115px
+	left: 53px
+	top: 33px
+	z-index: 2
+	border-top: 2px solid #0225C1
+	-webkit-border-radius: 50%
+	border-radius: 50% 
+	-webkit-animation: 2s linear circle-rotate infinite 
+	-moz-animation: 2s linear circle-rotate infinite 
+	-o-animation: 2s linear circle-rotate infinite 
+	animation: 2s linear circle-rotate infinite 
+.stages-anim
+	position: absolute
+	width: 100px
+	height: 100px
+	left: 60px
+	top: 40px
+	z-index: 2
+	-webkit-animation: 1.5s linear circle infinite 
+	-moz-animation: 1.5s linear circle infinite 
+	-o-animation: 1.5s linear circle infinite 
+	animation: 1.5s linear circle infinite 
+	border-top: 2px solid #0225C1
+	-webkit-border-radius: 50%
+	border-radius: 50% 
+
+@keyframes circle-rotate
+	from
+		border-top: 2px solid #0225C1
+	to
+		-webkit-transform: rotate(-360deg) 
+		-moz-transform: rotate(-360deg) 
+		-ms-transform: rotate(-360deg) 
+		-o-transform: rotate(-360deg) 
+		transform: rotate(-360deg) 
+@keyframes circle
+	from
+		border-top: 2px solid #0225C1
+	to
+		-webkit-transform: rotate(360deg) 
+		-moz-transform: rotate(360deg) 
+		-ms-transform: rotate(360deg) 
+		-o-transform: rotate(360deg) 
+		transform: rotate(360deg) 

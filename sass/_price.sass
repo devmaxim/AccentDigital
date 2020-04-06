@@ -1,0 +1,99 @@
+.price
+	padding: 120px 0
+	&-block
+		display: flex
+		-webkit-justify-content: space-between
+		justify-content: space-between
+		-webkit-align-items: center
+		align-items: center
+		margin-bottom: 100px
+	&__title
+		margin: 0
+	&__button
+		padding: 20px 50px
+		font-size: 18px
+		line-height: 22px
+		text-align: center
+		&-media
+			display: none
+	&-slider
+		position: relative
+		&__gradient
+			&_left
+				position: absolute
+				width: 200px
+				height: 160px
+				left: -15px
+				bottom: 0
+				background: linear-gradient(90deg, #FFFFFF -7.04%, rgba(255, 255, 255, 0.31) 100%)
+			&_right
+				position: absolute
+				width: 200px
+				height: 160px
+				right: -15px
+				padding-right: 50px
+				bottom: 0
+				background: linear-gradient(90deg, #FFFFFF -7.04%, rgba(255, 255, 255, 0.31) 100%)
+				transform: matrix(-1, 0, 0, 1, 0, 0)
+		&-list
+			display: flex
+			-webkit-justify-content: space-between
+			justify-content: space-between
+			-webkit-align-items: center
+			align-items: center
+			position: relative
+			 
+			&__item
+				margin-right: 90px
+				&:focus
+					outline: none 
+				&-block
+					&-1
+						margin-bottom: 30px
+				&-title
+					font-family: $mont-regular
+					font-size: 16px
+					line-height: 140%
+					letter-spacing: 0.5px
+					color: $text-color
+					margin-bottom: 5px
+					display: inline-block
+				&-info
+					display: flex
+					&-1
+						font-family: $mont-regular
+						font-size: 14px
+						line-height: 140%
+						letter-spacing: 0.5px
+						color: #F36B6B
+						margin-right: 10px
+					&-2
+						font-family: $mont-regular
+						font-size: 14px
+						line-height: 140%
+						letter-spacing: 0.5px
+						color: #666666
+						margin-right: 10px
+					&-stat
+						background-color: #F36B6B
+						border-radius: 10px
+						padding: 5px
+						display: flex
+						-webkit-align-items: center
+						align-items: center
+						-webkit-justify-content: center
+						justify-content: center
+						span
+							font-family: $mont-regular
+							font-size: 10px
+							line-height: 11px
+							color: #FFFFFF
+							display: inline-block
+							margin-left: 5px
+						
+							
+
+
+.price-slider-list__item-3>.price-slider-list__item-block-2>.price-slider-list__item-info>.price-slider-list__item-info-stat
+	background-color: #35D83C
+	
